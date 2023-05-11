@@ -1,5 +1,8 @@
 from setuptools import setup, Extension
 from torch.utils import cpp_extension
+import os 
+
+os.environ["CUDA_HOME"] = "/usr/local/cuda"
 
 setup(
     name='quant_cuda',
